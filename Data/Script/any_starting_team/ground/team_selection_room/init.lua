@@ -399,11 +399,9 @@ function team_selection_room.SelectTeam(map)
 						if yesNoResult == true then
 							local yesnoResult = false 
 							while not yesnoResult do
-								UI:NameMenu("What is the Pokémon's name?", "(Leave blank for no name.)", 60)
+								UI:NameMenu("What is the Pokémon's name?", "", 116)
 								UI:WaitForChoice()
 								result = UI:ChoiceResult()
-								--if no name given, set name to species name
-								if result == "" then result = _DATA:GetMonster(char_choice.Species).Name:ToLocal() end
 								UI:ChoiceMenuYesNo("Is [color=#00FFFF]" .. result .. "[color] correct?")
 								UI:WaitForChoice()
 								yesnoResult = UI:ChoiceResult()
