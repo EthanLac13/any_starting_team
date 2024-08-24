@@ -1,0 +1,11 @@
+<Header>
+  <Name>Any Starting Team</Name>
+  <Author>FlowerSnek</Author>
+  <Description>Allows you to start with any team of up to 4 Pokémon which have sprites.</Description>
+  <Namespace>any_starting_team</Namespace>
+  <UUID>6E153158-541D-46BC-9B92-2BD0BB62BA3C</UUID>
+  <Version>1.0</Version>
+  <GameVersion>0.0</GameVersion>
+  <ModType>Mod</ModType>
+  <Relationships />
+</Header>
