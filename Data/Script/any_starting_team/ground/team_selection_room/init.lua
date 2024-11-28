@@ -506,10 +506,15 @@ function team_selection_room.FillTeam(map)
 			GAME:SetCharacterNickname(my_pokemon, name_list[i])
 			local talk_evt = RogueEssence.Dungeon.BattleScriptEvent("AllyInteract")
 			my_pokemon.ActionEvents:Add(talk_evt)
+			my_pokemon:FullRestore()
 			
 		end
 	end
-	
+	GAME:SetTeamLeaderIndex(0)
+	_DATA.Save:UpdateTeamProfile(true)
+	_DATA.Save.ActiveTeam.Players[0].IsFounder = true
+	_DATA.Save.ActiveTeam.Players[0].IsPartner = true
+	GROUND:Hide("PLAYER")
 	GAME:WaitFrames(20)
 	
 	UI:WaitShowDialogue("OK![pause=0] That's it![pause=0] You're all ready to go!")
