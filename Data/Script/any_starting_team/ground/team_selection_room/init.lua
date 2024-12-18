@@ -513,7 +513,7 @@ function team_selection_room.FillTeam(map)
 	GAME:SetTeamLeaderIndex(0)
 	_DATA.Save:UpdateTeamProfile(true)
 	_DATA.Save.ActiveTeam.Players[0].IsFounder = true
-	_DATA.Save.ActiveTeam.Players[0].IsPartner = true
+	_DATA.Save.ActiveTeam.Players[0].IsPartner = false
 	GROUND:Hide("PLAYER")
 	GAME:WaitFrames(20)
 	
